@@ -1,0 +1,24 @@
+{
+  "name": "koa-Cli",
+  "version": "1.0.0",
+  "description": "my koa-Cli for my-Cli bootStrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhouhaoxiang/koa-Cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhouhaoxiang/koa-Cli/issues"
+  },
+  "homepage": "https://github.com/zhouhaoxiang/koa-Cli#readme",
+  "dependencies": {
+    "koa": "^2.5.1",
+    "koa-compress": "^3.0.0"
+  }
+}
