@@ -6,4 +6,8 @@ dev use nodemon
 then nodemon app.js
 
 
-product node deamon.js then open localhost:port
+- koa web server
+- server static resource
+- cors 跨域debug
+- compress gzip
+- koa-session cookie/session

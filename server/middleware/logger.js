@@ -1,6 +1,5 @@
 module.exports = async (ctx, next) => {
     const start = Date.now();
-
     console.log(`\x1b[35m==> request \x1b[0m ${ctx.method} ${ctx.url} `);
     await next();
     const end = Date.now() - start;
