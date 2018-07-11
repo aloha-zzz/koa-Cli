@@ -5,3 +5,4 @@ module.exports = async (ctx, next) => {
     const end = Date.now() - start;
     console.log(`\x1b[32m <== response \x1b[0m ${ctx.body} ${ctx.status}   response time ${end}ms`);
 }
+
