@@ -6,7 +6,7 @@ const session = require('koa-session');
 const serve = require("koa-static");
 const compress = require('koa-compress');
 
-const { logger, catchWrong } = require('./server/middleware/index') // middleware
+const { logger, catchWrong, resHeader } = require('./server/middleware/index') // middleware
 const router = require('./server/router/index'); // router
 
 const app = new Koa();
@@ -32,6 +32,7 @@ const options = { threshold: 2048 }; // resouce > 2048kb
 app.use(compress(options)); // gzip
 
 app.use(logger); // logger middleware
+app.use(resHeader); // add response header
 
 app.use(serve(__dirname + '/static'));
 
